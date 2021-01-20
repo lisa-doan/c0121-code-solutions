@@ -1,7 +1,8 @@
-body, headings {
+h1, h2 {
   font-family: 'Roboto', sans-serif;
 }
 
-body {
+p {
+  font-family: 'Roboto', sans-serif;
   line-height: 1.6;
 }
