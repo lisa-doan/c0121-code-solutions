@@ -1,0 +1,27 @@
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px black solid;
+  width: 1005px;
+  padding: 170px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.row2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row3 {
+  display: flex;
+  justify-content: center;
+}
+
+.row4 {
+  display: flex;
+  justify-content: center;
+}
