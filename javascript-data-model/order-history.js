@@ -6,11 +6,14 @@ var orderHistory = [
     total: 34,
     shipTo: 'JS Masher',
     deliverDate: 'Aug 8, 2020',
-    item: ['Javascript for impatient programmers'],
-    note: ['Rauschmayer, Dr. Axel'],
-    returnDate: ['Sep 7, 2020'],
-    price: [31.55]
-
+    order: [
+      {
+        item: 'Javascript for impatient programmers',
+        note: 'Rauschmayer, Dr. Axel',
+        returnDate: 'Sep 7, 2020',
+        price: 31.55
+      }
+    ]
   },
   {
     orderNum: '113-9984268-1280257',
@@ -18,11 +21,14 @@ var orderHistory = [
     total: 44.53,
     shipTo: 'JS Masher',
     deliverDate: 'Jul 20, 2020',
-    item: ['The Timeless Way of Building'],
-    note: ['Alexander, Christopher'],
-    returnDate: ['Aug 19, 2020'],
-    price: [41.33]
-
+    order: [
+      {
+        item: 'The Timeless Way of Building',
+        note: 'Alexander, Christopher',
+        returnDate: 'Aug 19, 2020',
+        price: 41.33
+      }
+    ]
   },
   {
     orderNum: '114-2875557-9059409',
@@ -30,10 +36,14 @@ var orderHistory = [
     total: 17.22,
     shipTo: 'JS Masher',
     deliverDate: 'Jul 7, 2020',
-    item: ['Gamecube Controller Adapter. Super Smash Bros Switch Gamecube Adapter for WII U, PC. Support Turbo and Vibration Features. No Driver and No Lag-Gamecube Adapter'],
-    note: [null],
-    returnDate: ['Aug 5, 2020'],
-    price: [15.98]
+    order: [
+      {
+        item: 'Gamecube Controller Adapter. Super Smash Bros Switch Gamecube Adapter for WII U, PC. Support Turbo and Vibration Features. No Driver and No Lag-Gamecube Adapter',
+        note: null,
+        returnDate: 'Aug 5, 2020',
+        price: 15.98
+      }
+    ]
   },
   {
     orderNum: '113-2883177-2648248',
@@ -41,12 +51,20 @@ var orderHistory = [
     total: 138.93,
     shipTo: 'JS Masher',
     deliverDate: 'Jul 5, 2020',
-    item: ['Gamecube Controller - Super Smash Bros. Edition (Nintendo Switch)', 'The Art of Sql'],
-    note: [null, 'Faroult, Stephane'],
-    returnDate: ['Aug 4, 2020', 'Aug 4, 2020'],
-    price: [94.95, 33.99]
+    order:
+    [{
+      item: 'Gamecube Controller - Super Smash Bros. Edition (Nintendo Switch)',
+      note: null,
+      returnDate: 'Aug 4, 2020',
+      price: 94.95
+    },
+    {
+      item: 'The Art of Sql',
+      note: 'Faroult, Stephane',
+      returnDate: 'Aug 4, 2020',
+      price: 33.99
+    }]
   }
-
 ];
 
-console.log(orderHistory);
+console.log('properties of orderHistory: ', orderHistory);
