@@ -1,0 +1,50 @@
+#container {
+  padding: 10px;
+  width: 400px;
+}
+
+p {
+  color: #ec5d57;
+  font-family: 'BrandonGrotesque500', sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+label {
+  font-family: 'BrandonGrotesque500', sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  color: #373737;
+  padding-left: 8px;
+}
+
+#email,
+#name,
+#location {
+  font-family: 'AtlasGrotesk', sans-serif;
+  color: #a3a3a3;
+  border: solid #c2c5c4 1px;
+  border-radius: 5px;
+  width: 100%;
+  padding: 8px;
+}
+
+#engineers {
+  font-family: 'Brandon Grotesque', sans-serif;
+  color: #464646;
+  background-color: #f3f3f3;
+  border: solid #bfc1c1 1px;
+  border-radius: 5px;
+  width: 100%;
+  padding: 8px;
+}
+
+input[type=submit] {
+  font-family: 'BrandonGrotesque500', sans-serif;
+  background-color: #ec5d57;
+  color: white;
+  padding: 6px 20px;
+  border: 0 none;
+  border-radius: 40px;
+  float: right;
+}
