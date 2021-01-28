@@ -1,0 +1,40 @@
+body {
+  font-family: 'Barlow', sans-serif;
+  font-size: 14px;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: #f7f8fa;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.columns-one-fourth {
+  width: 25%;
+}
+
+.images {
+  width: 100%;
+}
+
+.icon {
+  width: 25%;
+}
+
+.header {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  padding: 12px;
+}
+
+.subheader {
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  padding: 12px;
+}
