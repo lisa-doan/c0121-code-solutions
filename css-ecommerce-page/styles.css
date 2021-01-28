@@ -5,23 +5,30 @@
   margin: auto;
 }
 
-.row {
+.row,
+.details-container {
   display: flex;
+  padding: 5px;
 }
 
 .column-one-fifth {
   width: 20%;
-  display: flex;
-  align-items: stretch;
   font-size: 14px;
   letter-spacing: 0.5px;
   font-weight: bold;
   padding: 10px;
 }
 
+.img-container {
+  height: 350px;
+  display: flex;
+  align-items: stretch;
+}
+
 .column-one-fifth .size {
   color: #d3d3d3;
-  padding-left: 10px;
+  padding-left: 5px;
+  display: flex;
 }
 
 .column-one-fifth .sale-price {
@@ -31,7 +38,7 @@
 
 .column-one-fifth .retail-price {
   color: #d3d3d3;
-  padding-left: 10px;
+  padding-left: 5px;
   text-decoration: line-through;
 }
 
