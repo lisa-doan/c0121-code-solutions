@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+.backlight.on {
+  background-color: #fdf9f1;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backlight.off {
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.light.on {
+  padding: 100px;
+  border-radius: 50%;
+  border: #f4ec94 solid;
+  background-color: #f7e992;
+  outline: none;
+}
+
+.light.off {
+  padding: 100px;
+  border-radius: 50%;
+  border: #242424 solid;
+  background-color: #242424;
+  outline: none;
+}
