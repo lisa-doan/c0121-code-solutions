@@ -7,6 +7,7 @@ function logSubmit(event) {
   };
   console.log('MessageData: ', messageData);
   event.preventDefault();
+  $form.reset();
 }
 
 const $form = document.getElementById('contact-form');
