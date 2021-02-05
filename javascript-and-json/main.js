@@ -23,11 +23,11 @@ console.log('JSON.stringify(books): ', JSON.stringify(books));
 console.log('typeof JSON.stringify(books): ', typeof JSON.stringify(books))
 ;
 
-var String = '{"id":123, "name":"Lisa"}';
+var student = '{"id":123, "name":"Lisa"}';
 
-console.log('String: ', String);
-console.log('typeof String: ', typeof String);
+console.log('student: ', student);
+console.log('typeof student: ', typeof student);
 
-var Object = JSON.parse(String);
-console.log('JSON.parse(String): ', Object);
-console.log('typeof JSON.parse(String): ', typeof Object);
+var studentObj = JSON.parse(student);
+console.log('JSON.parse(String): ', studentObj);
+console.log('typeof JSON.parse(String): ', typeof studentObj);
