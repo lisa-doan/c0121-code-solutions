@@ -2,7 +2,7 @@ var $head = document.querySelector('h1');
 
 function countdown() {
   var count = $head.textContent;
-  if (count > 0) {
+  if (count > 1) {
     count--;
     $head.textContent = count;
   } else {
