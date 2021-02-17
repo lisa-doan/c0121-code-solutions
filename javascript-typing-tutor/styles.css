@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.character {
+  padding-bottom: 1px;
+}
+
+.correct {
+  color: #60c942;
+}
+
+.incorrect {
+  color: red;
+  border-bottom: red solid;
+}
+
+.current {
+  border-bottom: black solid;
+}
