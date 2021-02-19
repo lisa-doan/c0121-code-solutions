@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  width: 1000px;
+  margin: auto;
+}
+
+nav {
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+
+
+
+  /* justify-content: center;
+  align-items: center;  */
+  height: 80px;
+  border-bottom: #fafafa solid 2px;
+  border: springgreen solid;
+}
+
+.nav-container {
+  border: purple solid;
+  margin: auto;
+
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  width: 140px;
+  border: tan solid;
+  left: 20px;
+}
+
+.nav-bar {
+  border: turquoise solid;
+  display: flex;
+  margin: auto;
+  list-style: none;
+}
+
+.nav-bar a {
+  text-decoration: none;
+
+  /* margin: 10px;
+  padding: 10px; */
+  color: #c2c2c2;
+}
+
+.nav-bar #contact {
+  background: #284464;
+  color: white;
+  border-radius: 5px;
+}
+
+.logo,
+.images {
+  width: 100%;
+}
+
+/* section {
+  border: blue solid;
+  width: 800px;
+  margin: 100px auto;
+  background-image: url("images/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-container {
+  border: tomato 2px solid;
+  height: 100vh;
+  display: flex;
+}
+
+.half-content {
+  position: relative;
+  width: 70%;
+  border: violet solid;
+}
+
+header {
+  font-family: Tiempos Headline, 'Times New Roman', Times, serif;
+  color: white;
+}
+
+p {
+  font-family: Tiempos Headline, 'Times New Roman', Times, serif;
+  color: white;
+} */
