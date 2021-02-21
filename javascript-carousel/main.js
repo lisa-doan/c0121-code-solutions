@@ -11,50 +11,50 @@ var images = [
 var index = 0;
 var timerId = null;
 
-// function setCircle(position) {
-//   for (let i = 0; i < $circle.length; i++) {
-//     $circle[i].setAttribute('class', 'far fa-circle');
-//   }
-//   $circle[index].setAttribute('class', 'fas fa-circle');
-// }
-
-// function right() {
-//   clearInterval(timerId);
-//   index++;
-//   if (index > 4) {
-//     index = 0;
-//   }
-//   $image.setAttribute('src', images[index]);
-//   setCircle(index);
-//   timerId = setInterval(right, 1000 * 3);
-// }
-
-// function left() {
-//   clearInterval(timerId);
-//   index--;
-//   if (index < 0) {
-//     index = 4;
-//   }
-//   $image.setAttribute('src', images[index]);
-//   setCircle(index);
-//   timerId = setInterval(right, 1000 * 3);
-// }
-
-// $leftArrow.addEventListener('click', left);
-// $rightArrow.addEventListener('click', right);
-// timerId = setInterval(right, 3000);
-
-function test(event) {
-  var circlTargetId = event.target.id;
-  if (circlTargetId === index) {
-    console.log('circlTargetId: ', circlTargetId);
-  } else {
-    console.log('not a match');
+function setCircle(position) {
+  for (var i = 0; i < $circle.length; i++) {
+    $circle[i].setAttribute('class', 'far fa-circle');
   }
-
-  // var entryTargetClass = event.target.className;
-
-  // console.log('entryTargetClass: ', entryTargetClass);
+  $circle[index].setAttribute('class', 'fas fa-circle');
 }
 
-$circlesContainer.addEventListener('click', test);
+function right() {
+  clearInterval(timerId);
+  index++;
+  if (index > 4) {
+    index = 0;
+  }
+  $image.setAttribute('src', images[index]);
+  setCircle(index);
+  timerId = setInterval(right, 1000 * 3);
+}
+
+function left() {
+  clearInterval(timerId);
+  index--;
+  if (index < 0) {
+    index = 4;
+  }
+  $image.setAttribute('src', images[index]);
+  setCircle(index);
+  timerId = setInterval(right, 1000 * 3);
+}
+
+function dots(event) {
+  clearInterval(timerId);
+  console.log(event.target.id)
+  console.log(event.target.getAttribute('id'))
+  index = Number(event.target.id) - 1;
+  $image.setAttribute('src', images[index]);
+  for (var i = 0; i < $circle.length; i++) {
+    $circle[i].setAttribute('class', 'far fa-circle');
+  }
+  $circle[index].setAttribute('class', 'fas fa-circle');
+  timerId = setInterval(right, 1000 * 3);
+}
+
+
+$leftArrow.addEventListener('click', left);
+$rightArrow.addEventListener('click', right);
+$circlesContainer.addEventListener('click', dots);
+timerId = setInterval(right, 3000);
