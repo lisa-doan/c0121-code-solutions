@@ -42,8 +42,6 @@ function left() {
 
 function dots(event) {
   clearInterval(timerId);
-  console.log(event.target.id)
-  console.log(event.target.getAttribute('id'))
   index = Number(event.target.id) - 1;
   $image.setAttribute('src', images[index]);
   for (var i = 0; i < $circle.length; i++) {
