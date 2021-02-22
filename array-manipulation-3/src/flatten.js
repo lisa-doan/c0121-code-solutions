@@ -2,10 +2,11 @@
 function flatten(array) {
   var output = [];
   for (var i = 0; i < array.length; i++) {
+    if(Array.isArray(array[i])) {
     for (var j = 0; j < array[i].length; j++) {
       output.push(array[i][j])
     }
-    if (typeof array[i] === 'number' || !array[i]) {
+  } else {
       output.push(array[i])
     }
   }
