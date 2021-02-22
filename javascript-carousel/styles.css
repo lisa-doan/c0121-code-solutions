@@ -1,0 +1,21 @@
+
+.carousel-container {
+  margin: auto;
+  text-align: center;
+}
+
+.carousel-column {
+  display: flex;
+  margin: auto;
+}
+
+.carousel-left,
+.carousel-right {
+  width: 20%;
+  margin: auto;
+  font-size: 25px;
+}
+
+.carousel-center {
+  width: 60%;
+}
