@@ -1,12 +1,10 @@
 const fs = require('fs');
-const { isRegExp } = require('util');
 const file = require('./data.json')
 
 if(process.argv[2] === 'read') {
-  fs.readFile('./data.json', 'utf8', (err, data) => {
-    if (err) throw err;
-    console.log(file.notes);
-  });
+  for(let key in file.notes) {
+    console.log(`${key}: ${file.notes[key]}`)
+  }
 } else if(process.argv[2] === 'create') {
   const userInput = process.argv[3];
   file.notes[file.nextId] = userInput;

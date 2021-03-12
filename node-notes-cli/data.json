@@ -1,10 +1,10 @@
 {
-  "nextId": 8,
+  "nextId": 9,
   "notes": {
     "2": "I should take a looooong nap.",
-    "3": "In JavaScript, the value of `this` is determined when a function is called; not when it is defined.",
-    "4": "A closure is formed when a function retains access to variables in its lexical scope.",
+    "4": "Thinking about flying",
     "5": "I do not want to fly",
-    "7": "I just wanna fly."
+    "7": "I just wanna fly.",
+    "8": "Wait..should I fly?!"
   }
 }
