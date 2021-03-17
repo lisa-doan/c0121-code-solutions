@@ -1,5 +1,5 @@
            List of relations
- Schema |     Name     | Type  | Owner 
+ Schema |     Name     | Type  | Owner
 --------+--------------+-------+-------
  public | actors       | table | dev
  public | addresses    | table | dev
@@ -17,4 +17,3 @@
  public | staff        | table | dev
  public | stores       | table | dev
 (15 rows)
-
