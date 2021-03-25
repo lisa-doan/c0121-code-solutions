@@ -1,0 +1,32 @@
+button {
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid rgb(70, 70, 70);
+  cursor: pointer;
+}
+.cold {
+  background-color: rgb(53, 28, 117);
+  color:white;
+}
+
+.cool {
+  background-color: rgb(103, 78, 167);
+  color:white;
+}
+
+.tepid {
+  background-color: rgb(224, 102, 102);
+  color:white;
+}
+
+.warm {
+  background-color: rgb(246, 178, 107);
+}
+
+.hot {
+  background-color: rgb(231, 231, 73);
+}
+
+.nuclear {
+  background-color: rgb(255, 255, 255);
+}
