@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 class CustomButton extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { counter: false };
+    this.state = { isClicked: false };
     this.handleClick = this.handleClick.bind(this);
   }
 
