@@ -1,0 +1,17 @@
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-family: sans-serif;
+}
+
+.fas{
+   font-size: 32px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.fa-toggle-on{
+  color: #78a55a;
+}
