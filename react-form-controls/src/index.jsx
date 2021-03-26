@@ -14,7 +14,7 @@ class NewsletterForm extends React.Component {
   }
 
   handleSubmit(event) {
-    console.log(this.state.value);
+    console.log(this.state);
     event.preventDefault();
   }
    render() {
