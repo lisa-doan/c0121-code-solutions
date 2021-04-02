@@ -1,0 +1,13 @@
+For each feature in the application, describe the flow of the code in writing, including the client, server, and database. How does the code work?
+
+User can sign up.
+- User inputs a username and password to the form and the handleChange() method is called and sets the state for those values. Once the user clicks on the "Register" button, the handleSubmit() method sends an API fetch request with the POST method to the server. If the username and password values are valid, the password is hashed with Argon2. The username and hashedPassword are inserted into the database. After the data is stored in the database, the server responds with an array of the new user data. The user is rendered back to the auth page.
+
+User can sign in.
+- User is required to input a username and password. After the form is complete and the user clicks on "Log In" button, the handleSubmit() method is called and sends an API fetch request with the POST method to the server. The server checks if the information provided exists in the database. If there is a match, the server responds with a unique token and payload. The handleSignIn() method is then called and the token is stored in the local storage. The state is now set to the current user. The renderPage() method is called which returns the user to the home page.
+
+User can stay signed in (even if they refresh the page).
+- When user is signed in and reloads the page, the componentDidMount() method is called and checks if a token exists in the local storage and set the state of the user to the same user.
+
+User can sign out.
+- Once the user clicks on the "Sign Out" button, the handleSignOut() method is called. The token is removed from the local storage and the state for user is now null. The renderPage() method is called which returns the user to the auth page.
